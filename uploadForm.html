@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Movie</title>
+</head>
+<body>
+  <h1>Upload Movie</h1>
+  <form action="/api/movies/upload" method="POST" enctype="multipart/form-data">
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" required>
+    <br>
+    <label for="year">Year:</label>
+    <input type="text" id="year" name="year" required>
+    <br>
+    <label for="rated">Rated:</label>
+    <input type="text" id="rated" name="rated" required>
+    <br>
+    <label for="released">Released:</label>
+    <input type="text" id="released" name="released" required>
+    <br>
+    <label for="runtime">Runtime:</label>
+    <input type="text" id="runtime" name="runtime" required>
+    <br>
+    <label for="genre">Genre:</label>
+    <input type="text" id="genre" name="genre" required>
+    <br>
+    <label for="director">Director:</label>
+    <input type="text" id="director" name="director" required>
+    <br>
+    <label for="writer">Writer:</label>
+    <input type="text" id="writer" name="writer" required>
+    <br>
+    <label for="actors">Actors:</label>
+    <input type="text" id="actors" name="actors" required>
+    <br>
+    <label for="plot">Plot:</label>
+    <textarea id="plot" name="plot" required></textarea>
+    <br>
+    <label for="language">Language:</label>
+    <input type="text" id="language" name="language" required>
+    <br>
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="country" required>
+    <br>
+    <label for="awards">Awards:</label>
+    <input type="text" id="awards" name="awards" required>
+    <br>
+    <label for="poster">Poster URL:</label>
+    <input type="text" id="poster" name="poster" required>
+    <br>
+    <label for="metascore">Metascore:</label>
+    <input type="text" id="metascore" name="metascore" required>
+    <br>
+    <label for="imdbRating">IMDB Rating:</label>
+    <input type="text" id="imdbRating" name="imdbRating" required>
+    <br>
+    <label for="imdbVotes">IMDB Votes:</label>
+    <input type="text" id="imdbVotes" name="imdbVotes" required>
+    <br>
+    <label for="imdbID">IMDB ID:</label>
+    <input type="text" id="imdbID" name="imdbID" required>
+    <br>
+    <label for="type">Type:</label>
+    <input type="text" id="type" name="type" required>
+    <br>
+    <label for="dvd">DVD:</label>
+    <input type="text" id="dvd" name="dvd">
+    <br>
+    <label for="boxOffice">Box Office:</label>
+    <input type="text" id="boxOffice" name="boxOffice">
+    <br>
+    <label for="production">Production:</label>
+    <input type="text" id="production" name="production">
+    <br>
+    <label for="website">Website:</label>
+    <input type="text" id="website" name="website">
+    <br>
+    <label for="response">Response:</label>
+    <input type="text" id="response" name="response" required>
+    <br>
+    <label for="file">Choose a movie file:</label>
+    <input type="file" id="file" name="file" accept="video/*" required>
+    <br>
+    <label for="subtitle">Choose a subtitle file:</label>
+    <input type="file" id="subtitle" name="subtitle" accept=".srt,.vtt" required>
+    <br>
+    <button type="submit">Upload</button>
+  </form>
+</body>
+</html>
